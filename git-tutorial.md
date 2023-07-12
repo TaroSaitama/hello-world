@@ -27,11 +27,11 @@ gitではブランチを分けることで、同じリポジトリないで異�
 
 ## gitのコマンド
 ### gitを導入したら一回だけやるコマンド
-- git config --global user.name "<USER_NAME>"
+- git config --global user.name "&lt;USER_NAME&gt;"
 
     名前を設定する。誰がコミットしたかの情報を残すために用いる。
 
-- git config --global user.email "<EMAIL>"
+- git config --global user.email "&lt;EMAIL&gt;"
 
     メールアドレスを設定する。
 
@@ -50,9 +50,9 @@ gitではブランチを分けることで、同じリポジトリないで異�
 
     現在のブランチ、ワークツリーでのファイルの状態を表示する。
 
-- git add <FILE_NAME>
+- git add &lt;FILE_NAME&gt;
 
-    ステージングエリアにファイルを登録する。<FILE_NAME>には、登録するファイルまでのパスを指定する。複数ある場合は半角スペースで区切る。「.」を指定すると、ワークツリー内のすべてのファイルを登録する。
+    ステージングエリアにファイルを登録する。&lt;FILE_NAME&gt;には、登録するファイルまでのパスを指定する。複数ある場合は半角スペースで区切る。「.」を指定すると、ワークツリー内のすべてのファイルを登録する。
 
 - git commit 
 
@@ -115,21 +115,21 @@ gitではブランチを分けることで、同じリポジトリないで異�
     引数にコミットIDとファイル名を指定すると、指定したコミットのファイルを現在のブランチの同名のファイルに反映させる。
 
 ### リモートリポジトリに対する操作
-- git clone <PATH>
+- git clone &lt;PATH&gt;
 
     リポジトリの内容でローカルリポジトリを複製する。
     現在いる場所に複製したリポジトリは作成される。
-    <PATH>にはリポジトリまでのパス(ローカルなら.gitまでのパス、リモートならURL)を指定する。
+    &lt;PATH&gt;にはリポジトリまでのパス(ローカルなら.gitまでのパス、リモートならURL)を指定する。
     リモートリポジトリの複製はgithub上でもできる。
     
-- git pull <REPOSITORY> <BRANCH>
+- git pull &lt;REPOSITORY&gt; &lt;BRANCH&gt;
 
-    <REPOSITORY>リポジトリの<BRANCH>ブランチの更新を取得し、現在のブランチにマージする。
+    &lt;REPOSITORY&gt;リポジトリの&lt;BRANCH&gt;ブランチの更新を取得し、現在のブランチにマージする。
     引数を省略して実行する場合、現在のブランチに上流ブランチ（upstream branch）が設定されて入れば、上流ブランチの更新を取得し、現在のブランチにマージする。
 
-- git push <REPOSITORY> <BRANCH>
+- git push &lt;REPOSITORY&gt; &lt;BRANCH&gt;
 
-    リモートの<REPOSITORY>リポジトリの<BRANCH>ブランチに、現在のブランチを反映させる。引数を省略した場合、originリポジトリの上流ブランチ反映される。
+    リモートの&lt;REPOSITORY&gt;リポジトリの&lt;BRANCH&gt;ブランチに、現在のブランチを反映させる。引数を省略した場合、originリポジトリの上流ブランチ反映される。
 
     **オプション**
     -u: コマンドの実行で更新されるリモートリポジトリのブランチを現在のブランチの上流ブランチに設定する。
